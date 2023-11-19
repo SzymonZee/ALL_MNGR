@@ -4,15 +4,20 @@ class Patient
 {
 
 
-
+public:
 	
+	void setName(std::string name);
+	std::string getName() const;
+	void setAge(int age);
+	int getAge() {
+		return this->m_Age;
+	}
 
 
+private:
 
-public :
-	
 	std::string m_Name;
-	int age;
+	int m_Age;
 
 };
 

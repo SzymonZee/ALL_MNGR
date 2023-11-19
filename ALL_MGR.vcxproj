@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,12 +129,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ALL_MGR.cpp" />
+    <ClCompile Include="DataManipulation.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventFactory.cpp" />
     <ClCompile Include="Patient.cpp" />
     <ClCompile Include="PatientBuilder.cpp" />
+    <ClCompile Include="PatientProfile.cpp" />
+    <ClCompile Include="Rutine.cpp" />
+    <ClCompile Include="ScheduleBuilder.cpp" />
+    <ClCompile Include="Time_Schedule.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataManipulation.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventFactory.h" />
     <ClInclude Include="Patient.h" />
     <ClInclude Include="PatientBuilder.h" />
+    <ClInclude Include="PatientProfile.h" />
+    <ClInclude Include="Rutine.h" />
+    <ClInclude Include="ScheduleBuilder.h" />
+    <ClInclude Include="Time_Schedule.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

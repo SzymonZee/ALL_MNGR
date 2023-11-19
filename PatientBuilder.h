@@ -4,7 +4,8 @@
 #include "Patient.h"
 class PatientBuilder
 {
-
+public:
+	PatientBuilder();
 	PatientBuilder& setName(const std::string& name);
 	PatientBuilder& setAge(const int& age);
 	std::unique_ptr<Patient> build();

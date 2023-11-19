@@ -2,11 +2,38 @@
 //
 
 #include <iostream>
-
+#include "PatientBuilder.h"
+#include <vector>
+#include <map>
+#include <array>
+#include "Rutine.h"
 int main()
 {
     std::cout << "Hello World!\n";
+
+    PatientBuilder P1;
+    auto B1 = P1.setName("Janek").setAge(17).build();
+
+    std::string c1 = B1->getName();
+    std::cout << "Patient's name is: " << c1 << '\n';
+    std::array<std::unique_ptr<Patient>, 5> Arr{};
+
+    for (auto& Patients : Arr)
+    {
+       PatientBuilder C1;
+        std::cout << "Podaj Imie";
+       std::string c;
+        std::cin >> c;
+         Patients = C1.setName(c).setAge(19).build();
+
+    }
+   int b= Arr.at(2)->getAge();
+   std::cout << b;
+   Rutine R1{};
+  
+  
 }
+
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
 // Debugowanie programu: F5 lub menu Debugowanie > Rozpocznij debugowanie
